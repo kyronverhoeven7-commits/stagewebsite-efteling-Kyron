@@ -1,0 +1,480 @@
+body {
+    position: relative;
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3b2923;
+
+    background-color: #e8d8b8;
+
+    background-image:
+        radial-gradient(
+            circle at 20% 15%,
+            rgba(201, 168, 76, 0.14) 0,
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(123, 23, 23, 0.07) 0,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f7f1e4 0%,
+            #e8d8b8 50%,
+            #f7f1e4 100%
+        );
+
+    background-blend-mode: multiply;
+
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px;
+
+    border: 8px solid #c9a84c;
+    border-radius: 6px;
+
+    outline: 2px solid rgba(201, 168, 76, 0.55);
+    outline-offset: -14px;
+
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.25),
+        0 0 40px rgba(201, 168, 76, 0.18);
+
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    font-size: 50px;
+    font-weight: bold;
+
+    color: #f8e7b0;
+
+    background: linear-gradient(
+        135deg,
+        #4f0b0b 0%,
+        #7b1717 45%,
+        #5f1010 100%
+    );
+
+    padding: 35px 30px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    letter-spacing: 1.5px;
+
+    border: 3px solid #c9a84c;
+
+    outline: 1px solid rgba(201, 168, 76, 0.7);
+    outline-offset: -10px;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.28),
+        inset 0 0 25px rgba(201, 168, 76, 0.14),
+        0 0 18px rgba(201, 168, 76, 0.15);
+
+    text-shadow:
+        0 2px 3px rgba(0, 0, 0, 0.35),
+        0 0 10px rgba(201, 168, 76, 0.25);
+
+    position: relative;
+}
+
+h1::before {
+    content: "✦  ❧  ✦";
+
+    display: block;
+    color: #c9a84c;
+
+    font-size: 22px;
+    margin-bottom: 10px;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 6px rgba(201, 168, 76, 0.6);
+}
+
+h1::after {
+    content: "❧  ✦  ❧";
+
+    display: block;
+    color: #c9a84c;
+
+    font-size: 22px;
+    margin-top: 12px;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 7px rgba(201, 168, 76, 0.6);
+}
+
+h2 {
+    font-size: 32px;
+    color: #7b1717;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    padding: 12px 15px;
+    position: relative;
+
+    background-color: rgba(255, 253, 248, 0.45);
+
+    border-left: 4px solid #c9a84c;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.6);
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 8px rgba(123, 23, 23, 0.06);
+}
+
+h2::before {
+    content: "❧";
+    color: #c9a84c;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+h2::after {
+    content: "❧  ✦  ❧";
+    display: block;
+    color: #c9a84c;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 6px rgba(201, 168, 76, 0.4);
+}
+
+h3 {
+    font-size: 24px;
+    color: #7b1717;
+    margin-top: 25px;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h3::after {
+    content: "❧ ───── ✦";
+    display: block;
+    color: #c9a84c;
+    font-size: 13px;
+    margin-top: 3px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.tekst-met-foto .tekst {
+    flex: 1;
+}
+
+.tekst-met-foto img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+
+/* Plaatje bij Mijn werkplek */
+
+.werkplek {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.werkplek img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.ticketsysteem {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.organigram {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.organigram img {
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px gba(0, 0, 0, 0.2);
+}
+
+.afbeelding-uitleg {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.kaart {
+    background-color: rgba(255, 250, 235, 0.65);
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(123, 23, 23, 0.08);
+    border: 1px solid rgba(201, 168, 76, 0.55);
+    border-left: 3px solid #c9a84c;
+    transition: 0.3s;
+}
+
+.kaart:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(123, 23, 23, 0.16);
+}
+
+nav {
+    background: linear-gradient(
+        135deg,
+        #5f1010 0%,
+        #7b1717 50%,
+        #5f1010 100%
+    );
+
+    padding: 18px 15px;
+    border-radius: 8px;
+    margin-bottom: 45px;
+    text-align: center;
+
+    border: 2px solid #c9a84c;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.18),
+        inset 0 0 12px rgba(201, 168, 76, 0.10);
+
+    position: relative;
+}
+
+nav a {
+    color: #f8e7b0;
+    text-decoration: none;
+    font-weight: bold;
+
+    display: inline-block;
+
+    margin: 5px 6px;
+    padding: 10px 16px;
+
+    border: 1px solid rgba(201, 168, 76, 0.55);
+    border-radius: 20px;
+
+    background-color: rgba(201, 168, 76, 0.08);
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #5f1010;
+
+    background: #c9a84c;
+
+    border-color: #f8e7b0;
+
+    box-shadow:
+        0 0 12px rgba(201, 168, 76, 0.7),
+        inset 0 0 8px rgba(255, 255, 255, 0.25);
+
+    transform: translateY(-3px);
+}
+
+body::before {
+    content: "❧";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    color: #7b1717;
+    font-size: 38px;
+    font-weight: bold;
+
+    transform: rotate(-20deg);
+
+    text-shadow:
+        0 0 2px #c9a84c,
+        0 0 6px rgba(201, 168, 76, 0.7);
+
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Mooie Efteling-stijl voor afbeeldingen */
+
+.tekst-met-foto img,
+.werkplek img,
+.ticketsysteem,
+.organigram img {
+    border: 4px solid #c9a84c;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Footer */
+
+footer {
+    background: linear-gradient(
+        135deg,
+        #5f1010 0%,
+        #7b1717 50%,
+        #5f1010 100%
+    );
+
+    color: #f8e7b0;
+    text-align: center;
+
+    padding: 30px 25px;
+    margin-top: 60px;
+
+    border-radius: 8px 8px 0 0;
+    border-top: 3px solid #c9a84c;
+    border-bottom: 3px solid #c9a84c;
+
+    box-shadow:
+        0 -5px 18px rgba(0, 0, 0, 0.18),
+        inset 0 0 18px rgba(201, 168, 76, 0.10);
+
+    position: relative;
+}
+
+footer::before {
+    content: "❧  ✦  ❧";
+    display: block;
+    color: #c9a84c;
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+footer::after {
+    content: "❧  ✦  ❧";
+    display: block;
+
+    color: #c9a84c;
+    font-size: 22px;
+
+    margin-top: 12px;
+    letter-spacing: 5px;
+
+    text-shadow: 0 0 7px rgba(201, 168, 76, 0.45);
+}
+
+footer p {
+    margin: 5px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+}
+
+/* Subtiel hover-effect voor afbeeldingen */
+
+.tekst-met-foto img:hover,
+.werkplek img:hover,
+.ticketsysteem:hover,
+.organigram img:hover {
+    transition: 0.3s;
+}
+
+.tekst-met-foto img:hover,
+.werkplek img:hover,
+.ticketsysteem:hover,
+.organigram img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 22px rgba(123, 23, 23, 0.22);
+}
+
+/* Magische rand rondom de pagina */
+
+body::after {
+    content: "❧";
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    color: #7b1717;
+    font-size: 38px;
+    font-weight: bold;
+
+    transform: scaleX(-1) rotate(-20deg);
+
+    text-shadow:
+        0 0 2px #c9a84c,
+        0 0 6px rgba(201, 168, 76, 0.7);
+
+    z-index: 10;
+    pointer-events: none;
+}
+
+nav,
+h1,
+h2,
+h3,
+p,
+.kaart,
+.werkplek,
+.ticketsysteem,
+.organigram,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+html {
+    background-color: #3b2923;
+    background-image:
+        url("efteling-zijkant.png"),
+        url("efteling-zijkant.png");
+    background-repeat:
+        repeat-y,
+        repeat-y;
+    background-position:
+        left top,
+        right top;
+    background-size:
+        22% auto,
+        22% auto;
+    background-attachment:
+        fixed,
+        fixed;
+}
+
+/* Werkplek: tekst links en foto rechts */
+
+.tekst-met-foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.tekst-met-foto .tekst {
+    flex: 1;
+    min-width: 0;
+}
+
+.tekst-met-foto img {
+    width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+    order: 2;
+}
