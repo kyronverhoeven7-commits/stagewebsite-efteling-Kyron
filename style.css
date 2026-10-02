@@ -65,7 +65,7 @@ h1 {
         #5f1010 100%
     );
 
-    padding: 35px 30px;
+    padding: 20px 5px;
     border-radius: 14px;
     margin-bottom: 20px;
 
@@ -244,11 +244,42 @@ nav {
 
     border: 2px solid #c9a84c;
 
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.18),
-        inset 0 0 12px rgba(201, 168, 76, 0.10);
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.30),
+    0 0 25px rgba(201, 168, 76, 0.18),
+    inset 0 0 18px rgba(201, 168, 76, 0.14);
 
     position: relative;
+}
+
+/* Hoekornamenten navigatie */
+
+
+/* Bovenste hoekornamenten navigatie */
+.nav-corner {
+    position: absolute;
+
+    color: #d4af37;
+    font-size: 24px;
+
+    text-shadow:
+        0 0 6px rgba(212, 175, 55, 0.45);
+
+    pointer-events: none;
+}
+
+.nav-corner-tl {
+    left: 14px;
+    top: 8px;
+
+    transform: rotate(45deg);
+}
+
+.nav-corner-tr {
+    right: 14px;
+    top: 8px;
+
+    transform: rotate(-45deg);
 }
 
 nav a {
@@ -655,4 +686,58 @@ body {
 
     z-index: 21;
     pointer-events: none;
+}
+
+/* Vaste Begin-knop */
+.begin-knop {
+    position: fixed;
+    right: 14px;
+    bottom: 30px;
+
+    color: #f8e7b0;
+    background: linear-gradient(
+        135deg,
+        #5f1010,
+        #7b1717,
+        #5f1010
+    );
+
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 15px;
+
+    padding: 10px 18px;
+    border: 2px solid #c9a84c;
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        0 0 10px rgba(201, 168, 76, 0.20);
+
+    z-index: 9998;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Goud wanneer je eroverheen gaat */
+.begin-knop:hover {
+    transform: translateY(-3px);
+
+    color: #5f1010;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #f1d36a,
+        #d4af37
+    );
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.40),
+        0 0 16px rgba(212, 175, 55, 0.55);
 }
