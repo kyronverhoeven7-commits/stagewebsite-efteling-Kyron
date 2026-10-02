@@ -21,7 +21,7 @@
 
    
 
-    <h2 id="wie-ben-ik">Kyron Verhoeven</h2>
+    <h2 id="Kyron Verhoeven">Kyron Verhoeven</h2>
 
     <p>
        Mijn naam is Kyron Verhoeven geboren 09-06-2007 19 jaar kom uit Tilburg en woon in de Reeshof samen met mijn vader Michael en mijn stiefmoeder Mariska, Michael werkt als zzp'er in de bouw en is 49 jaar oud. Mijn moeder Femke woont in Gilze samen met mijn stiefvader Kevin en 2 broertjes, Femke is 47 jaar oud en werkt in de zorg als ouderenverzorgster. Jayson mijn jongste broertje is 6 jaar en is een echte voetballer, andere broertje Myka is 16 jaar en zit al op het vmbo en heeft altijd gezegd dat hij wetenschapper wordt. Zelf zit ik op het mbo en volg de opleiding ICT Support Technician op Yonder Kasteeldreef in Tilburg. Verder vind ik het leuk om met mijn vrienden dingen te doen. We gaan bijvoorbeeld vaak naar festivals zoals Decibel, Intents en Rebirth, we lopen vaak een rondje door de stad en kletsen we wat bij. Ook hou ik ervan om een serie te kijken met name spannende meeslepende actieseries zoals The Gentlemen of Prison Break. Games spelen zoals Grand Theft Auto of CS2. In mijn vrije tijd focus ik me voortaan vooral op het leren van muziek produceren, omdat ik vaak naar festivals ga in de hardcore scene focus ik me ook op dit soort genre muziek. Het lijkt me namelijk een niet normaal gevoel om zelf op een stage van zo'n festival te staan.
@@ -39,7 +39,7 @@
         </p>
     </div>
 
-    <img src="efteling-plattegrond.png" alt="Plattegrond van de Efteling">
+   <img src="efteling-plattegrond.png" alt="Plattegrond van de Efteling" onclick="openImage(this)">
 
 </div>
 
@@ -54,7 +54,7 @@
         </p>
     </div>
 
-    <img src="werkplek.jpg" alt="Mijn werkplek">
+    <img src="werkplek.jpg" alt="Mijn werkplek" onclick="openImage(this)">
 </div>
 <h2 id="werkplek">Werkplek</h2>
 
@@ -62,7 +62,7 @@
 
 
 <p>
-De werkzaamheden op de IT Servicedesk zijn elke dag verschillend. Op de Servicedesk werken we aan de tickets die binnenkomen. Waneer het nodig is gaan we vanuit hier ook het park in om problemen op locatie op te lossen.
+De werkzaamheden op de IT Servicedesk zijn elke dag verschillend. Op de Servicedesk werken we aan de tickets die binnenkomen. Waneer het nodig is gaan we vanuit hier ook het park in om problemen op locatie op te lossen. Alle tickets die behandeld zijn word en nejtes beschreven wat er gedaan is en doorgezet als opgelost zo is het overzichtelijk en makkelijk bij te houden.
 </p>
 
 
@@ -71,9 +71,6 @@ De werkzaamheden op de IT Servicedesk zijn elke dag verschillend. Op de Serviced
 
 <p>
  Hier kunnen medewerkers fysiek langskomen met een probleem of vraag. Ze kunnen hier direct geholpen worden met bijvoorbeeld een probleem met hun laptop, account of andere IT-zaken.
-</p>
-
-<p>
 Op het Serviceloket zijn altijd twee medewerkers aanwezig. Zij helpen de mensen die langskomen en proberen hun probleem zo snel mogelijk op te lossen.
 </p>
 
@@ -81,11 +78,8 @@ Op het Serviceloket zijn altijd twee medewerkers aanwezig. Zij helpen de mensen 
 <h3>Servicecenter</h3>
 
 <p>
-Hier komen voornamelijk eerstelijns meldingen binnen. De medewerkers beoordelen deze meldingen en geven ze, wanneer dat nodig is, door aan de Servicedesk. Ook hier zitten elke dag 2 mensen.
-</p>
+vanuit hier wordt de telefoonlijn beheert mensen die vanuit het park of kantoor bellen met een vraag of probleem worden hier geholpen. De telefoon wordt opgenomen door iemand en probeert het probleem vast te stellen en te kijken voor een oplossing. Mocht er geen snelle oplossing zijn word er een ticket gemaakt en word de melding doorgezet. Op het servicecenter zijn ook altijd 2 medewerkers aanwezig.
 
-<p>
-Ook komen hier de telefoontjes binnen van mensen die bellen met een vraag of probleem indien nodig word hier een ticket van gemaakt en doorgezet naar het Servicedesk.
 </p>
 
 <h4>Roulering</h3>
@@ -100,7 +94,7 @@ Ook komen hier de telefoontjes binnen van mensen die bellen met een vraag of pro
 
 <div class="organigram">
 
-    <img src="organigram.png" alt="Organigram IT Servicedesk">
+    <img src="organigram.png" alt="Organigram IT Servicedesk" onclick="openImage(this)">
 
     <p class="afbeelding-uitleg">
         
@@ -145,5 +139,29 @@ Ook komen hier de telefoontjes binnen van mensen die bellen met een vraag of pro
     <a href="#top">Begin</a>
 </footer>
 
+<div id="imagePopup" class="image-popup" onclick="closeImage(event)">
+    <span class="close">&times;</span>
+    <img id="popupImage" src="" alt="">
+</div>
+
+<script>
+function openImage(image) {
+    document.getElementById("popupImage").src = image.src;
+    document.getElementById("imagePopup").style.display = "flex";
+}
+
+function closeImage(event) {
+    if (event.target.id === "imagePopup" || event.target.classList.contains("close")) {
+        document.getElementById("imagePopup").style.display = "none";
+    }
+}
+</script>
+
 <body id="top">
+<div class="book-top"></div>
+<div class="book-bottom"></div>
+
+<div class="book-thin-top"></div>
+<div class="book-thin-bottom"></div>
+
 </html>

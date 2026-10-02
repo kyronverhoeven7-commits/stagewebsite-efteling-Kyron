@@ -4,50 +4,57 @@ body {
     font-family: Georgia, "Times New Roman", serif;
     color: #3b2923;
 
-    background-color: #e8d8b8;
+    background-color: rgba(247, 241, 228, 0.90);
 
     background-image:
         radial-gradient(
-            circle at 20% 15%,
-            rgba(201, 168, 76, 0.14) 0,
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 80% 20%,
-            rgba(123, 23, 23, 0.07) 0,
-            transparent 30%
+            circle at top left,
+            rgba(255, 248, 220, 0.85),
+            transparent 55%
         ),
         linear-gradient(
             135deg,
-            #f7f1e4 0%,
-            #e8d8b8 50%,
-            #f7f1e4 100%
+            #f7f1e4,
+            #e8d8b8
         );
 
     background-blend-mode: multiply;
 
     line-height: 1.6;
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 45px;
+    margin: 35px auto;
+    padding: 50px;
 
-    border: 8px solid #c9a84c;
-    border-radius: 6px;
+    border: 3px solid #8c6a32;
+    border-radius: 4px;
+
+    border-left: 14px solid #765426;
+    border-right: 14px solid #765426;
 
     outline: 2px solid rgba(201, 168, 76, 0.55);
     outline-offset: -14px;
 
     box-shadow:
-        0 0 20px rgba(0, 0, 0, 0.25),
-        0 0 40px rgba(201, 168, 76, 0.18);
+        0 25px 60px rgba(0, 0, 0, 0.55),
+        0 8px 20px rgba(0, 0, 0, 0.30),
+        inset 12px 0 20px rgba(80, 50, 20, 0.12),
+        inset -12px 0 20px rgba(80, 50, 20, 0.12);
 
     background-attachment: fixed;
+
+    min-height: 100vh;
+    box-sizing: border-box;
 }
+
+
+
+
 
 h1 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
     font-size: 50px;
     font-weight: bold;
+    letter-spacing: 2px;
 
     color: #f8e7b0;
 
@@ -113,29 +120,22 @@ h1::after {
 }
 
 h2 {
+    color: #6b1e2e;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
     font-size: 32px;
-    color: #7b1717;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    padding: 12px 15px;
-    position: relative;
-
-    background-color: rgba(255, 253, 248, 0.45);
-
-    border-left: 4px solid #c9a84c;
-    border-bottom: 1px solid rgba(201, 168, 76, 0.6);
-
+    margin-top: 45px;
+    margin-bottom: 20px;
+    padding: 13px 18px;
+    background: rgba(255, 248, 220, 0.72);
+    border-left: 6px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
     border-radius: 8px;
-
-    box-shadow: 0 3px 8px rgba(123, 23, 23, 0.06);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
+    letter-spacing: 0.3px;
+    text-align: center;
 }
 
-h2::before {
-    content: "❧";
-    color: #c9a84c;
-    font-size: 22px;
-    margin-right: 10px;
-}
+
 
 h2::after {
     content: "❧  ✦  ❧";
@@ -187,7 +187,7 @@ p {
 }
 
 
-/* Plaatje bij Mijn werkplek */
+
 
 .werkplek {
     width: 500px;
@@ -284,34 +284,43 @@ nav a:hover {
 }
 
 body::before {
-    content: "❧";
+    content: "";
     position: absolute;
-    top: 25px;
-    left: 25px;
 
-    color: #7b1717;
-    font-size: 38px;
-    font-weight: bold;
+    top: 18px;
+    left: 18px;
+    bottom: 18px;
 
-    transform: rotate(-20deg);
+    width: 5px;
 
-    text-shadow:
-        0 0 2px #c9a84c,
-        0 0 6px rgba(201, 168, 76, 0.7);
+    background: linear-gradient(
+        to bottom,
+        rgba(212, 175, 55, 0.75),
+        rgba(118, 84, 38, 0.35),
+        rgba(212, 175, 55, 0.75)
+    );
+
+    border-radius: 3px;
+
+    box-shadow:
+        -3px 0 0 rgba(118, 84, 38, 0.20),
+        -6px 0 12px rgba(0, 0, 0, 0.15);
 
     z-index: 10;
     pointer-events: none;
 }
 
-/* Mooie Efteling-stijl voor afbeeldingen */
+
 
 .tekst-met-foto img,
 .werkplek img,
 .ticketsysteem,
 .organigram img {
-    border: 4px solid #c9a84c;
+    border: 4px solid #d4af37;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -366,16 +375,21 @@ footer::after {
 footer p {
     margin: 5px 0;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 16px;
+    font-size: 16px
+    margin 5px 0;
+    line-height : 
 }
 
-/* Subtiel hover-effect voor afbeeldingen */
+
+
 
 .tekst-met-foto img:hover,
 .werkplek img:hover,
 .ticketsysteem:hover,
 .organigram img:hover {
     transition: 0.3s;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
 }
 
 .tekst-met-foto img:hover,
@@ -386,62 +400,59 @@ footer p {
     box-shadow: 0 8px 22px rgba(123, 23, 23, 0.22);
 }
 
-/* Magische rand rondom de pagina */
+
 
 body::after {
-    content: "❧";
+    content: "";
     position: absolute;
-    top: 25px;
-    right: 25px;
 
-    color: #7b1717;
-    font-size: 38px;
-    font-weight: bold;
+    top: 18px;
+    right: 18px;
+    bottom: 18px;
 
-    transform: scaleX(-1) rotate(-20deg);
+    width: 5px;
 
-    text-shadow:
-        0 0 2px #c9a84c,
-        0 0 6px rgba(201, 168, 76, 0.7);
+  background: linear-gradient(
+        to bottom,
+        rgba(212, 175, 55, 0.75),
+        rgba(118, 84, 38, 0.35),
+        rgba(212, 175, 55, 0.75)
+    );
+   
+    border-radius: 3px;
+
+    box-shadow:
+        3px 0 0 rgba(118, 84, 38, 0.20),
+        6px 0 12px rgba(0, 0, 0, 0.15);
 
     z-index: 10;
     pointer-events: none;
 }
 
-nav,
-h1,
-h2,
-h3,
-p,
-.kaart,
-.werkplek,
-.ticketsysteem,
-.organigram,
+
 footer {
     position: relative;
     z-index: 1;
 }
 
 html {
-    background-color: #3b2923;
+    min-height: 100%;
+    
+    background-color: #241713;
     background-image:
-        url("efteling-zijkant.png"),
-        url("efteling-zijkant.png");
-    background-repeat:
-        repeat-y,
-        repeat-y;
-    background-position:
-        left top,
-        right top;
-    background-size:
-        22% auto,
-        22% auto;
-    background-attachment:
-        fixed,
-        fixed;
+        linear-gradient(
+            rgba(35, 20, 15, 0.10),
+            rgba(35, 20, 15, 0.10)
+        ),
+        url("raveleijn_arena_kader_2329x1696.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* Werkplek: tekst links en foto rechts */
+
 
 .tekst-met-foto {
     display: flex;
@@ -485,4 +496,163 @@ footer a:hover {
         0 0 12px rgba(201, 168, 76, 0.7),
         inset 0 0 8px rgba(255, 255, 255, 0.25);
     transform: translateY(-3px);
+}
+
+.book-edge-left,
+.book-edge-right {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.book-edge-left {
+    left: -10px;
+    border-left: 2px solid rgba(212, 175, 55, 0.75);
+    border-right: 1px solid rgba(107, 30, 46, 0.18);
+    border-radius: 6px 0 0 6px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.10);
+}
+
+.book-edge-right {
+    right: -10px;
+    border-right: 2px solid rgba(212, 175, 55, 0.75);
+    border-left: 1px solid rgba(107, 30, 46, 0.18);
+    border-radius: 0 6px 6px 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.10);
+}
+
+/* Grote afbeelding popup */
+.image-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border: 4px solid #d4af37;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+.image-popup .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Bovenste boekrand */
+body::marker {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+/* Bovenste boekrand */
+body::marker {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+/* Bovenrand boek */
+.book-top {
+    position: absolute;
+    top: 0;
+    left: -7px;
+    right: -7px;
+
+    height: 10px;
+
+    background: linear-gradient(
+        to right,
+        #765426,
+        #d4af37,
+        #765426
+    );
+
+    border-radius: 4px 4px 0 0;
+
+    box-shadow:
+    0 -2px 0 rgba(118, 84, 38, 0.4),
+    0 3px 8px rgba(0, 0, 0, 0.25);
+
+    z-index: 20;
+    pointer-events: none;
+}
+
+
+/* Onderrand boek */
+.book-bottom {
+    position: absolute;
+    bottom: 0;
+    left: -7px;
+    right: -7px;
+
+    height: 10px;
+
+    background: linear-gradient(
+        to right,
+        #765426,
+        #d4af37,
+        #765426
+    );
+
+    border-radius: 0 0 4px 4px;
+
+    box-shadow:
+        0 2px 0 rgba(118, 84, 38, 0.4),
+        0 -3px 8px rgba(0, 0, 0, 0.25);
+
+    z-index: 20;
+    pointer-events: none;
+}
+
+/* Dunne gouden bovenrand */
+.book-thin-top {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+
+    background: #d4af37;
+
+    z-index: 21;
+    pointer-events: none;
+}
+
+/* Dunne gouden onderrand */
+.book-thin-bottom {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+
+    background: #d4af37;
+
+    z-index: 21;
+    pointer-events: none;
 }
